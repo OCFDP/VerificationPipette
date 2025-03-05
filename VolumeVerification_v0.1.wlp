@@ -72,22 +72,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "Cmd": "GEN.Set",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "parameter",
-                            "Value": "$LoopCount"
-                        },
-                        {
-                            "Name": "value",
-                            "Value": 0.0
-                        }
-                    ]
                 }
             ],
             "SubProcedure": false
