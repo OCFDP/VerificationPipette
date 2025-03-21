@@ -142,16 +142,18 @@
                                 "Pip": {
                                     "df": 1119,
                                     "dg": 0,
+                                    "dj": 1,
                                     "dm": 44742,
                                     "dn": 2,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zu": 932,
                                     "zv": 13982,
                                     "zy": 0
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationMode": 1,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixCycles": 2,
@@ -187,14 +189,12 @@
                                     "za": 32625,
                                     "zb": 32625,
                                     "ze": 0,
-                                    "zg": 32719,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
                                     "DispensePosition": 350.0,
                                     "EmergePosition": 350.0,
-                                    "FinalPosition": 351.0,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -261,13 +261,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -412,13 +412,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -563,13 +563,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -714,13 +714,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -865,13 +865,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -1085,7 +1085,7 @@
                     "Params": [
                         {
                             "Name": "text",
-                            "Value": "Tare the boat"
+                            "Value": "Tare the Boat"
                         }
                     ]
                 },
@@ -1138,16 +1138,18 @@
                                 "Pip": {
                                     "df": 1119,
                                     "dg": 0,
+                                    "dj": 1,
                                     "dm": 44742,
                                     "dn": 2,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zu": 932,
                                     "zv": 13982,
                                     "zy": 0
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationMode": 1,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixCycles": 2,
@@ -1180,17 +1182,15 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33092,
+                                    "zb": 33092,
                                     "ze": 0,
-                                    "zg": 32719,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.0,
+                                    "DispensePosition": 355.0,
+                                    "EmergePosition": 355.0,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -1257,13 +1257,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -1408,13 +1408,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -1559,13 +1559,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -1710,13 +1710,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
@@ -1861,13 +1861,13 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 30295,
+                                    "za": 29456,
                                     "zd": 0,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 325.0,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,

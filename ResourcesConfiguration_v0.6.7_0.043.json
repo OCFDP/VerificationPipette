@@ -266,7 +266,7 @@
         "StandardReservoir": {
             "AComment": "Defaults for reservoir containers. Container Height is 45.4 but because pickup range is 5, when the tip is at the film, we substract 5.4 here",
             "Class": "StandardContainer",
-            "ContainerHeight": 42.8,
+            "ContainerHeight": 50.8,
             "ContainerGeometry": 0,
             "ContainerDiameter": 9.5,
             "BottomHeight": 9.0,
