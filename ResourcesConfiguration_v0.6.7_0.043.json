@@ -1,0 +1,1444 @@
+{
+    "General": {
+        "LiquidHandling": {
+            "AComment": "Defines liquid handling related system defaults (SearchBottomMode: 0/off,1/on, Mixing activation when MixCycle > 0).",
+            "SearchBottomMode": 0,
+            "StartHeightBottomSearch": 5.0,
+            "DispenseHeightBottomSearch": 3.0,
+            "SurfaceFollowComment": "Must be probably computed during runtime",
+            "SurfaceFollow": [
+                {
+                    "Value": 1.0
+                },
+                {
+                    "Value": 0.9,
+                    "Context": "MA,MG"
+                }
+            ],
+            "MixCycle": 0,
+            "MixFlowRate": 10000,
+            "MixSurfaceFollow": 2.0,
+            "MixVolume": 2
+        }
+    },
+    "Containers": {
+        "Needle": {
+            "AComment": "Pipettor needle.",
+            "IsEnabled": true
+        },
+        "StandardContainer": {
+            "AComment": "Note: all offsets of a container must be specified in mm (related to TOP)",
+            "ContainerGeometryComment": "0/conical, 10000/flat, 6180/round",
+            "ContainerGeometry": 10000,
+            "LLDSpeed": 53.64,
+            "LLDImmersionDepth": 0.54,            
+            "LLDSensitivity": 1,
+			"LeavingHeight": 0.5,
+            "InternalUse": true,
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Blood"
+            ]
+        },
+        "Water Glass 100mL": {
+            "AComment": "A Water glass 100ml for test purposes (LLDStartPosition calculated - see ZTopStartLLDOffset; LLDSensitivity: 1/very high, ..., 4/low).",
+            "Class": "StandardContainer",
+            "ContainerHeight": 85.0,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 65.0,
+            "BottomHeight": 0.0,
+            "FinalOffset": 0.0,
+            "LLDStartOffset": 20.0,
+            "LLDSensitivity": 1,
+            "AspirationOffset": 40.0,
+            "DispenseOffset": 40.0,
+            "EmergeOffset": 50.0,
+            "SupportedLiquids": [
+                "Water"
+            ],
+            "InternalUse": false,
+            "IsEnabled": true
+        },
+        "ID": {
+            "AComment": "An ID cartridge.",
+            "Class": "StandardContainer",
+            "ContainerHeight": 21.0,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 16.0,
+            "BottomHeight": 20.0,
+            "FinalOffset": 20.0,
+			"EntryDepth": 5.0,
+            "LLDStartOffset": 20.0,
+            "AspirationOffset": 40.0,
+            "DispenseOffset": 40.0,
+            "EmergeOffset": 50.0,
+            "SupportedLiquids": [
+                "Water",
+				"Eluate",
+				"Elution Buffer",
+				"Mineral Oil"
+            ],
+            "InternalUse": false,
+            "IsEnabled": true
+        },
+		"ID_Tower": {
+            "AComment": "An ID cartridge.",
+            "Class": "StandardContainer",
+            "ContainerHeight": 15.0,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 16.0,
+            "BottomHeight": 20.0,
+            "FinalOffset": 7.0,
+			"EntryDepth": 7.0,
+            "LLDStartOffset": 7.0,
+            "AspirationOffset": 11.5,
+            "DispenseOffset": 11.5,
+            "EmergeOffset": 10.0,
+            "SupportedLiquids": [
+                "Water",
+				"Eluate",
+				"Elution Buffer",
+				"Mineral Oil"
+            ],
+            "InternalUse": false,
+            "IsEnabled": true
+        },
+		"ID_Tower_NoVent": {
+            "AComment": "An ID cartridge.",
+            "Class": "StandardContainer",
+            "ContainerHeight": 15.0,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 16.0,
+            "BottomHeight": 20.0,
+            "FinalOffset": 5.0,
+			"EntryDepth": 5.0,
+            "LLDStartOffset": 5.0,
+            "AspirationOffset": 5.0,
+            "DispenseOffset": 5.0,
+            "EmergeOffset": 5.0,
+            "SupportedLiquids": [
+                "Water",
+				"Eluate",
+				"Elution Buffer",
+				"Mineral Oil"
+            ],
+            "InternalUse": false,
+            "IsEnabled": true
+        },
+		"ID_MM": {
+            "AComment": "An ID cartridge.",
+            "Class": "StandardContainer",
+            "ContainerHeight": 15.0,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 16.0,
+            "BottomHeight": 20.0,
+            "FinalOffset": 7.0,
+			"EntryDepth": 7.0,
+            "LLDStartOffset": 20.0,
+            "AspirationOffset": 12.2,
+            "DispenseOffset": 10.0,
+            "EmergeOffset": 10.0,
+            "SupportedLiquids": [
+                "Water",
+				"Eluate",
+				"Elution Buffer",
+				"Mineral Oil",
+				"Lysis Buffer",
+				"Lysate and Binding"
+            ],
+            "InternalUse": false,
+            "IsEnabled": true
+        },
+		"TRAY_IC": {
+            "AComment": "An ID cartridge.",
+            "Class": "StandardContainer",
+            "ContainerHeight": 15.0,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 16.0,
+            "BottomHeight": 20.0,
+            "FinalOffset": 7.0,
+			"EntryDepth": 7.0,
+            "LLDStartOffset": 20.0,
+            "AspirationOffset": 12.2,
+            "DispenseOffset": 10.0,
+            "EmergeOffset": 10.0,
+            "SupportedLiquids": [
+                "Water",
+				"Eluate",
+				"Elution Buffer",
+				"Mineral Oil",
+				"Lysis Buffer",
+				"Lysate and Binding"
+            ],
+            "InternalUse": false,
+            "IsEnabled": true
+        },
+        "SPT": {
+            "AComment": "Sample preparation tube. Full container height is 110 but from the entry position it's less",
+            "Class": "StandardContainer",
+            "ContainerHeight": 68.500,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 16.8,
+            "BottomHeight": 25.0,
+            "LLDStartOffset": 10.0,
+            "FinalOffset": 25.0,
+            "EntryDepth": 10.0,
+            "AspirationOffset": 40.0,
+            "DispenseOffset": 40.0,
+            "EmergeOffset": 50.0,
+            "RatioContainer": 0.69,
+            "SupportedLiquids": [
+                "Blood",
+                "Water",
+                "Lysate",
+                "Lysis Buffer",                
+                "Super_01"
+            ],
+            "IsEnabled": true
+        },
+		"SPT_Super": {
+            "AComment": "Sample preparation tube. Full container height is 110 but from the entry position it's less",
+            "Class": "StandardContainer",
+            "ContainerHeight": 68.500,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 16.8,
+            "BottomHeight": 25.0,
+            "LLDStartOffset": 10.0,
+            "FinalOffset": 25.0,
+            "EntryDepth": 10.0,
+            "AspirationOffset": 40.0,
+            "DispenseOffset": 40.0,
+            "EmergeOffset": 50.0,
+            "RatioContainer": 0.69,
+            "SupportedLiquids": [
+                "Blood",
+                "Water",
+                "Lysate",
+                "Lysis Buffer",                
+                "Super_01"
+            ],
+            "IsEnabled": true
+        },
+		"SPT_Lysate": {
+            "AComment": "Sample preparation tube. Full container height is 110 but from the entry position it's less",
+            "Class": "StandardContainer",
+            "ContainerHeight": 68.500,
+            "ContainerGeometry": 10000,
+            "ContainerDiameter": 16.8,
+            "BottomHeight": 25.0,
+            "LLDStartOffset": 10.0,
+            "FinalOffset": 25.0,
+            "EntryDepth": 10.0,
+            "AspirationOffset": 40.0,
+            "DispenseOffset": 40.0,
+            "EmergeOffset": 50.0,
+            "RatioContainer": 0.69,
+            "SupportedLiquids": [
+                "Blood",
+                "Water",
+                "Lysate",
+                "Lysis Buffer",                
+                "Super_01"
+            ],
+            "IsEnabled": true
+        },
+        "VAC": {
+            "AComment": "Vacutainer 10mL with flat bottom.",
+            "Class": "StandardContainer",
+            "ContainerHeight": 93.483,
+            "ContainerGeometry": 6180,
+            "ContainerDiameter": 14.0,
+            "BottomHeight": 9.0,
+            "LLDStartOffset": 16.0,
+            "FinalOffset": 20.0,
+            "EntryDepth": 10.0,
+            "AspirationOffset": 40.0,
+            "DispenseOffset": 40.0,
+            "EmergeOffset": 60.0,
+            "RatioContainer": 0.8,
+            "SupportedLiquids": [
+                "Blood",
+                "Water",
+				"CalibrationWater"				  
+            ],
+            "IsEnabled": true
+        },
+        "StandardReservoir": {
+            "AComment": "Defaults for reservoir containers. Container Height is 45.4 but because pickup range is 5, when the tip is at the film, we substract 5.4 here",
+            "Class": "StandardContainer",
+            "ContainerHeight": 42.8,
+            "ContainerGeometry": 0,
+            "ContainerDiameter": 9.5,
+            "BottomHeight": 9.0,
+            "LLDStartOffset": 5.0,
+            "FinalOffset": 5.0,
+            "EntryDepth": 5.0,
+            "AspirationOffset": 15.0,
+            "DispenseOffset": 34.4,
+            "EmergeOffset": 5.0,
+            "RatioContainer": 1.0,
+            "InternalUse": true,
+            "IsEnabled": true
+        },
+		"StandardReservoir_OLD": {
+            "AComment": "[BACKUP of StandardReservoir v0.6.0] Defaults for reservoir containers. Container Height is 45.4 but because pickup range is 5, when the tip is at the film, we substract 5.4 here",
+            "Class": "StandardContainer",
+            "ContainerHeight": 41.5,
+            "ContainerGeometry": 0,
+            "ContainerDiameter": 10.0,
+            "BottomHeight": 9.0,
+            "LLDStartOffset": 0.0,
+            "FinalOffset": 0.0,
+            "EntryDepth": 0.1,
+            "AspirationOffset": 15.0,
+            "DispenseOffset": 34.4,
+            "EmergeOffset": 0.0,
+            "RatioContainer": 1.0,
+            "InternalUse": true,
+            "IsEnabled": true
+        },
+        "Res1": {
+            "AComment": "The reservoir no. 1. - for waste",
+            "Class": "StandardReservoir_OLD",
+            "SupportedLiquids": [
+                "Water", 
+                "Super_01"
+            ],
+            "IsEnabled": true
+        },
+        "Res2": {
+            "AComment": "The reservoir no. 2. - for waste",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", 
+                "Super_01"
+            ]
+        },
+        "Res3": {
+            "AComment": "The reservoir no. 3. - for waste",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", 
+                "Lysate and Binding", "Lysate"
+            ]
+        },
+        "Res4": {
+            "AComment": "The reservoir no. 4.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", 
+                "Lysate and Binding", "Lysate"
+            ]
+        },
+        "Res5": {
+            "AComment": "The reservoir no. 5.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Lysis Buffer"
+            ]
+        },
+        "Res6": {
+            "AComment": "The reservoir no. 6.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Elution Buffer"
+            ]
+        },
+        "Res7": {
+            "AComment": "The reservoir no. 7.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Eluate"
+            ]
+        },
+        "Res8": {
+            "AComment": "The reservoir no. 8.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true
+        },
+        "Res9": {
+            "AComment": "The reservoir no. 9.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", 
+                "Super_01"
+            ]
+        },
+        "Res10": {
+            "AComment": "The reservoir no. 10.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Elution Buffer"
+            ]
+        },
+        "Res11": {
+            "AComment": "The reservoir no. 11.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Elution Buffer"
+            ]
+        },
+        "Res12": {
+            "AComment": "The reservoir no. 12.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Wash Buffer"
+            ]
+        },
+        "Res13": {
+            "AComment": "The reservoir no. 13.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Wash Buffer"
+            ]
+        },
+        "Res14": {
+            "AComment": "The reservoir no. 14.",
+            "Class": "StandardReservoir_OLD",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water",
+				"Mineral Oil"
+            ]
+        },
+
+		"Res1_v2": {
+            "AComment": "The reservoir no. 1. - for waste",
+            "Class": "StandardReservoir",
+            "SupportedLiquids": [
+                "Water", 
+                "Super_01",
+				"Elution Buffer",
+				"Lysis Buffer",
+				"Wash Buffer",
+				"Lysate and Binding"
+            ],
+            "IsEnabled": true
+        },
+        "Res2_v2": {
+            "AComment": "The reservoir no. 2. - for waste",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", 
+                "Super_01",
+				"Mineral Oil"
+            ]
+        },
+        "Res3_v2": {
+            "AComment": "The reservoir no. 3. - for waste",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Elution Buffer",
+                "Lysate and Binding", "Lysate", "Eluate"
+            ]
+        },
+        "Res4_v2": {
+            "AComment": "The reservoir no. 4.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Elution Buffer"
+            ]
+        },
+        "Res5_v2": {
+            "AComment": "The reservoir no. 5.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Elution Buffer"
+            ]
+        },
+        "Res6_v2": {
+            "AComment": "The reservoir no. 6.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Elution Buffer", "Wash Buffer"
+            ]
+        },
+        "Res7_v2": {
+            "AComment": "The reservoir no. 7.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Eluate", "Lysis Buffer"
+            ]
+        },
+        "Res8_v2": {
+            "AComment": "The reservoir no. 8.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+			"SupportedLiquids": [
+                "Water", "Elution Buffer", "Wash Buffer"
+            ]
+        },
+        "Res9_v2": {
+            "AComment": "The reservoir no. 9.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", 
+                "Super_01",
+				"Lysate and Binding", 
+				"Lysate"
+            ]
+        },
+        "Res10_v2": {
+            "AComment": "The reservoir no. 10.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Elution Buffer"
+            ]
+        },
+        "Res11_v2": {
+            "AComment": "The reservoir no. 11.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", 
+				"Elution Buffer",
+				"Lysate and Binding", 
+				"Lysate"
+            ]
+        },
+        "Res12_v2": {
+            "AComment": "The reservoir no. 12.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Wash Buffer", "Elution Buffer"
+            ]
+        },
+        "Res13_v2_WASTE": {
+            "AComment": "The reservoir no. 13.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Wash Buffer", "Super_01"
+            ]
+        },
+        "Res14_v2_WASTE": {
+            "AComment": "The reservoir no. 14.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water",
+				"Mineral Oil",
+				"Super_01"
+            ]
+        },
+		"Res15_v2_WASTE": {
+            "AComment": "The reservoir no. 14.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water",
+				"Mineral Oil",
+				"Super_01"
+            ]
+        },
+		"Res16_v2_WASTE": {
+            "AComment": "The reservoir no. 14.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water",
+				"Mineral Oil",
+				"Super_01"
+            ]
+        },
+		"Res17_v2_WASTE": {
+            "AComment": "The reservoir no. 14.",
+            "Class": "StandardReservoir",
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water",
+				"Mineral Oil",
+				"Super_01",
+				"CalibrationWater"					  
+            ]
+        },
+		
+        "SCT": {
+            "AComment": "Defaults for Spin column tube from SP-SC-Assay. Height is 57 but pickup range is 10, so substracting 10 here and in dispense offset",
+            "Class": "StandardContainer",
+            "ContainerHeight": 47.0,
+            "ContainerDiameter": 10.0,
+            "RatioContainer": 1.2,
+            "DispenseOffset": 20.0,
+            "FinalOffset": 20.0,
+            "EmergeOffset": 20.0,
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Lysate and Binding", "Wash Buffer", "Elution Buffer"
+            ]
+        },
+        
+        "SCB": {
+            "AComment": "Spin column bucket - position to retrieve eluate. Height is 107 but pickup range is 10, so substracting 10 here",
+            "Class": "StandardContainer",
+            "ContainerHeight": 97.97,
+            "ContainerDiameter": 15.0,
+            "RatioContainer": 1.2,            
+            "AspirationOffset": 93.0,
+            "FinalOffset": 15.0,
+            "EmergeOffset": 93.0,
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Eluate"
+            ]
+		},
+		
+		
+		"SCB_Eluate": {
+            "AComment": "Spin column bucket - position to retrieve eluate. Height is 107 but pickup range is 10, so substracting 10 here",
+            "Class": "StandardContainer",
+            "ContainerHeight": 97.97,
+            "ContainerDiameter": 15.0,
+            "RatioContainer": 1.2,            
+            "AspirationOffset": 91.0,
+            "FinalOffset": 15.0,
+            "EmergeOffset": 91.0,
+            "IsEnabled": true,
+            "SupportedLiquids": [
+                "Water", "Eluate"
+            ]
+        }
+    },
+    "Liquids": {
+        "StandardLiquid": {
+            "AComment": "Properties are used only in case of missing explicit definition for a liquid. ",
+            "StopBackVolume": 0,
+            "DispenseAcceleration": 77.0,
+            "AntiDroplet": false,
+            "AspirationMode": 0,
+            "QPMMode": false,
+            "SettleTime": [
+                {
+                    "Value": 1
+                },
+                {
+                    "Value": 2,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "TraverseSpeed": 32.18,
+            "InternalUse": true,
+            "IsEnabled": true
+        },
+        "Blood": {
+            "AComment": "Whole blood sample.",
+            "Class": "StandardLiquid",
+            "AntiDroplet": false,
+            "AspirationMode": 1,
+            "SettleTime": [
+                {
+                    "Value": 5,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 10,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "FlowRate": [
+                {
+                    "Value": 20000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 21000,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 1795,
+            "StopFlowRate": 500,
+            "ZeroVolume": [
+                {
+                    "Value": 1282,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 2564,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 5.36,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 20,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 10,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.043,
+            "IsEnabled": true
+        },
+        "Cushionina_1mL": {
+            "AComment": "Cushionina 1 mL.",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 5000,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 1333,
+            "StopFlowRate": 2000,
+            "ZeroVolume": [
+                {
+                    "Value": 0,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1867,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 80,
+            "SwapSpeed": [
+                {
+                    "Value": 0.21,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 21.46,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 5,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 20,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0375,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 3,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 20,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+        "Eluate": {
+            "AComment": "Rinsing Pre-Eluate?",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 22400,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 9404,
+            "StopFlowRate": 11200,
+            "ZeroVolume": [
+                {
+                    "Value": 627,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 9404,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 3.22,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 5,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0319,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+        "Elution Buffer": {
+            "AComment": "Elution Buffer.",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 22400,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 9404,
+            "StopFlowRate": 11200,
+            "ZeroVolume": [
+                {
+                    "Value": 627,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 9404,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 3.22,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 2,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0319,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+		"Mineral Oil": {
+            "AComment": "Elution Buffer.",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 22400,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 9404,
+            "StopFlowRate": 11200,
+            "ZeroVolume": [
+                {
+                    "Value": 627,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 9404,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 3.22,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 2,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0319,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+        "Lysate": {
+            "AComment": "Liquid remaining after lysis of the cells",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 11200,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 1580,
+            "StopFlowRate": 56000,
+            "ZeroVolume": [
+                {
+                    "Value": 1129,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1580,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 5.36,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 4,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 8,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 10,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0443,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 8,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 10,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+        "Lysate and Binding": {
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 11200,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 7538,
+            "StopFlowRate": 11200,
+            "ZeroVolume": [
+                {
+                    "Value": 503,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 7538,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 5.36,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 5,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0380,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 3,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+        "Lysis Buffer": {
+            "AComment": "Lysis Buffer.",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 11200,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 3386,
+            "StopFlowRate": 200,
+            "ZeroVolume": [
+                {
+                    "Value": 1500,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 2709,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 3.22,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 2,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0420,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 3,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 2,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+        "Super_01": {
+            "AComment": "Supernatant?",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 20000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 21000,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 1759,
+            "StopFlowRate": 500,
+            "ZeroVolume": [
+                {
+                    "Value": 1256,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 2513,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 5.36,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 8,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 5,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 10,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0398,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 5,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 10,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+        "Wash Buffer": {
+            "AComment": "Cleaning buffer.",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 11200,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 4178,
+            "StopFlowRate": 200,
+            "ZeroVolume": [
+                {
+                    "Value": 1950,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 3343,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 5.36,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1.61,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 1,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.03915,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        },
+        "Water": {
+            "AComment": "Just plain tap water for testing.",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 20000,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 1256,
+            "StopFlowRate": 500,
+            "ZeroVolume": [
+                {
+                    "Value": 1256,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 2513,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 5.36,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 5.36,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 1,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.0398,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        
+    },
+	"CalibrationWater": {
+            "AComment": "Just plain tap water for testing.",
+            "Class": "StandardLiquid",
+            "FlowRate": [
+                {
+                    "Value": 10000,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 20000,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "BlowoutVolume": 1256,
+            "StopFlowRate": 500,
+            "ZeroVolume": [
+                {
+                    "Value": 1256,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 2513,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "OverAspirate": 0,
+            "SwapSpeed": [
+                {
+                    "Value": 5.36,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 5.36,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "Timeout": [
+                {
+                    "Value": 1,
+                    "Context": "ZA"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MB,MH,ML"
+                }
+            ],
+            "VolumeRatio": 0.043,
+            "IsEnabled": true,
+            "SettleTime": [
+                {
+                    "Value": 1,
+                    "Context": "MA,MG"
+                },
+                {
+                    "Value": 1,
+                    "Context": "MB,MH,ML"
+                }
+            ]
+        }
+    },
+    "Speeds": {
+        "Default": {
+            "AComment": "The default speed for Z-Drive movements.",
+            "IsEnabled": true,
+            "Speed": 40
+        },
+        "Fast": {
+            "AComment": "Fast speed for Z-Drive movements.",
+            "Speed": 40
+        },
+        "InsideVac": {
+            "AComment": "Speed moving while inside Vacutainer.",
+            "IsEnabled": true,
+            "Speed": 8
+        },
+        "Maximum": {
+            "AComment": "Maximum speed for Z-Drive movements.",
+            "IsEnabled": true,
+            "Speed": 100
+        },
+        "Minimum": {
+            "AComment": "Minimum speed for Z-Drive movements.",
+            "IsEnabled": true,
+            "Speed": 0.01
+        },
+        "PeneSeptum": {
+            "AComment": "Speed to penetrate the septum.",
+            "IsEnabled": true,
+            "Speed": 5
+        },
+        "PeneVac": {
+            "AComment": "Speed to penetrate the Vacutainer septum.",
+            "IsEnabled": true,
+            "Speed": 1.6
+        },
+        "Slow": {
+            "AComment": "Slow speed for Z-Drive movements.",
+            "IsEnabled": true,
+            "Speed": 10
+        },
+        "VerySlow": {
+            "AComment": "Very slow speed for Z-Drive movements.",
+            "IsEnabled": true,
+            "Speed": 3.2
+        }
+    }
+}
