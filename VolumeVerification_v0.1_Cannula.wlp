@@ -2137,18 +2137,14 @@
                                     "dm": 44742,
                                     "dn": 2,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
-                                    "zg": 28897,
+                                    "za": 29456,
                                     "zu": 932,
                                     "zv": 13982,
                                     "zy": 0
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 310.0,
                                     "FlowRate": 20000,
                                     "MixCycles": 2,
                                     "MixSurfaceFollow": 0.0,
@@ -2179,17 +2175,15 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33092,
+                                    "zb": 33092,
                                     "ze": 0,
-                                    "zg": 32719,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.0,
+                                    "DispensePosition": 355.0,
+                                    "EmergePosition": 355.0,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -2256,18 +2250,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -2322,172 +2312,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
-                                    "SurfaceFollow": 0.0,
-                                    "SwapSpeed": 5.0,
-                                    "TraverseSpeed": 100.0
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "GEN.Query",
-                    "Comment": "Weight the volume and Tare",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "text",
-                            "Value": "Weight the volume and Tare"
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "NOP",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": null
-                },
-                {
-                    "Cmd": "ROB.MoveTo",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "where",
-                            "Value": "COIP[1].Res_v2[17]"
-                        },
-                        {
-                            "Name": "customized",
-                            "Value": {
-                                "AccelerationX": 2500.0,
-                                "AccelerationY": 1500.0,
-                                "AccelerationZ": 300.0,
-                                "DiagonalXY": true,
-                                "SpeedP": 160.92,
-                                "SpeedX": 1000.0,
-                                "SpeedY": 1000.0,
-                                "SpeedZ": 70.0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "PIP.AspirateFixZ",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "where",
-                            "Value": "COIP[1].Res_v2[17]"
-                        },
-                        {
-                            "Name": "what",
-                            "Value": "CalibrationWater"
-                        },
-                        {
-                            "Name": "volume",
-                            "Value": 0.5
-                        },
-                        {
-                            "Name": "customized",
-                            "Value": {
-                                "Pip": {
-                                    "df": 1119,
-                                    "dg": 447,
-                                    "dm": 44742,
-                                    "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
-                                    "zd": 0,
-                                    "zg": 29829,
-                                    "zu": 466,
-                                    "zv": 9321
-                                },
-                                "Raw": {
-                                    "AspirationPosition": 258.5,
-                                    "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
-                                    "FlowRate": 20000,
-                                    "MixVolume": 44742,
-                                    "SurfaceFollow": 0.0,
-                                    "SwapSpeed": 5.0,
-                                    "TraverseSpeed": 100.0,
-                                    "ZeroVolume": 447
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "ROB.MoveTo",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "where",
-                            "Value": "SAIP[4]"
-                        },
-                        {
-                            "Name": "customized",
-                            "Value": {
-                                "AccelerationX": 2500.0,
-                                "AccelerationY": 1500.0,
-                                "AccelerationZ": 300.0,
-                                "DiagonalXY": true,
-                                "SpeedP": 160.92,
-                                "SpeedX": 1000.0,
-                                "SpeedY": 1000.0,
-                                "SpeedZ": 70.0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "PIP.EmptyTip",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "where",
-                            "Value": "SAIP[4]"
-                        },
-                        {
-                            "Name": "what",
-                            "Value": "CalibrationWater"
-                        },
-                        {
-                            "Name": "customized",
-                            "Value": {
-                                "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
-                                    "ze": 0,
-                                    "zg": 32767,
-                                    "zu": 466,
-                                    "zv": 9321
-                                },
-                                "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -2566,18 +2401,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -2632,17 +2463,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -2721,18 +2552,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -2787,17 +2614,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -2876,18 +2703,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -2942,17 +2765,168 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
+                                    "SurfaceFollow": 0.0,
+                                    "SwapSpeed": 5.0,
+                                    "TraverseSpeed": 100.0
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "GEN.Query",
+                    "Comment": "Weight the volume and Tare",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "text",
+                            "Value": "Weight the volume and Tare"
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "NOP",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": null
+                },
+                {
+                    "Cmd": "ROB.MoveTo",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "where",
+                            "Value": "COIP[1].Res_v2[17]"
+                        },
+                        {
+                            "Name": "customized",
+                            "Value": {
+                                "AccelerationX": 2500.0,
+                                "AccelerationY": 1500.0,
+                                "AccelerationZ": 300.0,
+                                "DiagonalXY": true,
+                                "SpeedP": 160.92,
+                                "SpeedX": 1000.0,
+                                "SpeedY": 1000.0,
+                                "SpeedZ": 70.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "PIP.AspirateFixZ",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "where",
+                            "Value": "COIP[1].Res_v2[17]"
+                        },
+                        {
+                            "Name": "what",
+                            "Value": "CalibrationWater"
+                        },
+                        {
+                            "Name": "volume",
+                            "Value": 0.5
+                        },
+                        {
+                            "Name": "customized",
+                            "Value": {
+                                "Pip": {
+                                    "df": 1119,
+                                    "dg": 447,
+                                    "dm": 44742,
+                                    "dv": 20000,
+                                    "za": 29456,
+                                    "zd": 0,
+                                    "zu": 466,
+                                    "zv": 9321
+                                },
+                                "Raw": {
+                                    "AspirationPosition": 316.0,
+                                    "BlowoutVolume": 1119,
+                                    "FlowRate": 20000,
+                                    "MixVolume": 44742,
+                                    "SurfaceFollow": 0.0,
+                                    "SwapSpeed": 5.0,
+                                    "TraverseSpeed": 100.0,
+                                    "ZeroVolume": 447
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "ROB.MoveTo",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "where",
+                            "Value": "SAIP[4]"
+                        },
+                        {
+                            "Name": "customized",
+                            "Value": {
+                                "AccelerationX": 2500.0,
+                                "AccelerationY": 1500.0,
+                                "AccelerationZ": 300.0,
+                                "DiagonalXY": true,
+                                "SpeedP": 160.92,
+                                "SpeedX": 1000.0,
+                                "SpeedY": 1000.0,
+                                "SpeedZ": 70.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "PIP.EmptyTip",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "where",
+                            "Value": "SAIP[4]"
+                        },
+                        {
+                            "Name": "what",
+                            "Value": "CalibrationWater"
+                        },
+                        {
+                            "Name": "customized",
+                            "Value": {
+                                "Pip": {
+                                    "za": 33699,
+                                    "zb": 33699,
+                                    "ze": 0,
+                                    "zg": 33699,
+                                    "zu": 466,
+                                    "zv": 9321
+                                },
+                                "Raw": {
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -3156,18 +3130,14 @@
                                     "dm": 44742,
                                     "dn": 2,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
-                                    "zg": 28897,
+                                    "za": 29456,
                                     "zu": 932,
                                     "zv": 13982,
                                     "zy": 0
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 310.0,
                                     "FlowRate": 20000,
                                     "MixCycles": 2,
                                     "MixSurfaceFollow": 0.0,
@@ -3198,17 +3168,15 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33092,
+                                    "zb": 33092,
                                     "ze": 0,
-                                    "zg": 32719,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.0,
+                                    "DispensePosition": 355.0,
+                                    "EmergePosition": 355.0,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -3275,18 +3243,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -3341,172 +3305,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
-                                    "SurfaceFollow": 0.0,
-                                    "SwapSpeed": 5.0,
-                                    "TraverseSpeed": 100.0
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "GEN.Query",
-                    "Comment": "Weight the volume and Tare",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "text",
-                            "Value": "Weight the volume and Tare"
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "NOP",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": null
-                },
-                {
-                    "Cmd": "ROB.MoveTo",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "where",
-                            "Value": "COIP[1].Res_v2[17]"
-                        },
-                        {
-                            "Name": "customized",
-                            "Value": {
-                                "AccelerationX": 2500.0,
-                                "AccelerationY": 1500.0,
-                                "AccelerationZ": 300.0,
-                                "DiagonalXY": true,
-                                "SpeedP": 160.92,
-                                "SpeedX": 1000.0,
-                                "SpeedY": 1000.0,
-                                "SpeedZ": 70.0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "PIP.AspirateFixZ",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "where",
-                            "Value": "COIP[1].Res_v2[17]"
-                        },
-                        {
-                            "Name": "what",
-                            "Value": "CalibrationWater"
-                        },
-                        {
-                            "Name": "volume",
-                            "Value": 1.0
-                        },
-                        {
-                            "Name": "customized",
-                            "Value": {
-                                "Pip": {
-                                    "df": 1119,
-                                    "dg": 447,
-                                    "dm": 44742,
-                                    "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
-                                    "zd": 0,
-                                    "zg": 29829,
-                                    "zu": 466,
-                                    "zv": 9321
-                                },
-                                "Raw": {
-                                    "AspirationPosition": 258.5,
-                                    "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
-                                    "FlowRate": 20000,
-                                    "MixVolume": 44742,
-                                    "SurfaceFollow": 0.0,
-                                    "SwapSpeed": 5.0,
-                                    "TraverseSpeed": 100.0,
-                                    "ZeroVolume": 447
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "ROB.MoveTo",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "where",
-                            "Value": "SAIP[4]"
-                        },
-                        {
-                            "Name": "customized",
-                            "Value": {
-                                "AccelerationX": 2500.0,
-                                "AccelerationY": 1500.0,
-                                "AccelerationZ": 300.0,
-                                "DiagonalXY": true,
-                                "SpeedP": 160.92,
-                                "SpeedX": 1000.0,
-                                "SpeedY": 1000.0,
-                                "SpeedZ": 70.0
-                            }
-                        }
-                    ]
-                },
-                {
-                    "Cmd": "PIP.EmptyTip",
-                    "Comment": "",
-                    "Enabled": true,
-                    "Parallel": false,
-                    "Params": [
-                        {
-                            "Name": "where",
-                            "Value": "SAIP[4]"
-                        },
-                        {
-                            "Name": "what",
-                            "Value": "CalibrationWater"
-                        },
-                        {
-                            "Name": "customized",
-                            "Value": {
-                                "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
-                                    "ze": 0,
-                                    "zg": 32767,
-                                    "zu": 466,
-                                    "zv": 9321
-                                },
-                                "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -3585,18 +3394,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -3651,17 +3456,168 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
+                                    "SurfaceFollow": 0.0,
+                                    "SwapSpeed": 5.0,
+                                    "TraverseSpeed": 100.0
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "GEN.Query",
+                    "Comment": "Weight the volume and Tare",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "text",
+                            "Value": "Weight the volume and Tare"
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "NOP",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": null
+                },
+                {
+                    "Cmd": "ROB.MoveTo",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "where",
+                            "Value": "COIP[1].Res_v2[17]"
+                        },
+                        {
+                            "Name": "customized",
+                            "Value": {
+                                "AccelerationX": 2500.0,
+                                "AccelerationY": 1500.0,
+                                "AccelerationZ": 300.0,
+                                "DiagonalXY": true,
+                                "SpeedP": 160.92,
+                                "SpeedX": 1000.0,
+                                "SpeedY": 1000.0,
+                                "SpeedZ": 70.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "PIP.AspirateFixZ",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "where",
+                            "Value": "COIP[1].Res_v2[17]"
+                        },
+                        {
+                            "Name": "what",
+                            "Value": "CalibrationWater"
+                        },
+                        {
+                            "Name": "volume",
+                            "Value": 1.0
+                        },
+                        {
+                            "Name": "customized",
+                            "Value": {
+                                "Pip": {
+                                    "df": 1119,
+                                    "dg": 447,
+                                    "dm": 44742,
+                                    "dv": 20000,
+                                    "za": 29456,
+                                    "zd": 0,
+                                    "zu": 466,
+                                    "zv": 9321
+                                },
+                                "Raw": {
+                                    "AspirationPosition": 316.0,
+                                    "BlowoutVolume": 1119,
+                                    "FlowRate": 20000,
+                                    "MixVolume": 44742,
+                                    "SurfaceFollow": 0.0,
+                                    "SwapSpeed": 5.0,
+                                    "TraverseSpeed": 100.0,
+                                    "ZeroVolume": 447
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "ROB.MoveTo",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "where",
+                            "Value": "SAIP[4]"
+                        },
+                        {
+                            "Name": "customized",
+                            "Value": {
+                                "AccelerationX": 2500.0,
+                                "AccelerationY": 1500.0,
+                                "AccelerationZ": 300.0,
+                                "DiagonalXY": true,
+                                "SpeedP": 160.92,
+                                "SpeedX": 1000.0,
+                                "SpeedY": 1000.0,
+                                "SpeedZ": 70.0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "Cmd": "PIP.EmptyTip",
+                    "Comment": "",
+                    "Enabled": true,
+                    "Parallel": false,
+                    "Params": [
+                        {
+                            "Name": "where",
+                            "Value": "SAIP[4]"
+                        },
+                        {
+                            "Name": "what",
+                            "Value": "CalibrationWater"
+                        },
+                        {
+                            "Name": "customized",
+                            "Value": {
+                                "Pip": {
+                                    "za": 33699,
+                                    "zb": 33699,
+                                    "ze": 0,
+                                    "zg": 33699,
+                                    "zu": 466,
+                                    "zv": 9321
+                                },
+                                "Raw": {
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -3740,18 +3696,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -3806,17 +3758,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -3895,18 +3847,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -3961,17 +3909,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -4175,18 +4123,14 @@
                                     "dm": 44742,
                                     "dn": 2,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
-                                    "zg": 28897,
+                                    "za": 29456,
                                     "zu": 932,
                                     "zv": 13982,
                                     "zy": 0
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 310.0,
                                     "FlowRate": 20000,
                                     "MixCycles": 2,
                                     "MixSurfaceFollow": 0.0,
@@ -4217,17 +4161,15 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33092,
+                                    "zb": 33092,
                                     "ze": 0,
-                                    "zg": 32719,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.0,
+                                    "DispensePosition": 355.0,
+                                    "EmergePosition": 355.0,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -4294,18 +4236,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -4360,17 +4298,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -4449,18 +4387,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -4515,17 +4449,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -4604,18 +4538,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -4670,17 +4600,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -4759,18 +4689,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -4825,17 +4751,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -4914,18 +4840,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -4980,17 +4902,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -5194,18 +5116,14 @@
                                     "dm": 89485,
                                     "dn": 2,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
-                                    "zg": 28897,
+                                    "za": 29456,
                                     "zu": 932,
                                     "zv": 13982,
                                     "zy": 0
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 310.0,
                                     "FlowRate": 20000,
                                     "MixCycles": 2,
                                     "MixSurfaceFollow": 0.0,
@@ -5237,17 +5155,15 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33092,
+                                    "zb": 33092,
                                     "ze": 0,
-                                    "zg": 32719,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.0,
+                                    "DispensePosition": 355.0,
+                                    "EmergePosition": 355.0,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -5314,18 +5230,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -5380,17 +5292,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -5469,18 +5381,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -5535,17 +5443,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -5624,18 +5532,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -5690,17 +5594,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -5779,18 +5683,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -5845,17 +5745,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
@@ -5934,18 +5834,14 @@
                                     "dg": 447,
                                     "dm": 44742,
                                     "dv": 20000,
-                                    "za": 24096,
-                                    "zb": 28897,
+                                    "za": 29456,
                                     "zd": 0,
-                                    "zg": 29829,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "AspirationPosition": 258.5,
+                                    "AspirationPosition": 316.0,
                                     "BlowoutVolume": 1119,
-                                    "EmergePosition": 310.0,
-                                    "FinalPosition": 320.0,
                                     "FlowRate": 20000,
                                     "MixVolume": 44742,
                                     "SurfaceFollow": 0.0,
@@ -6000,17 +5896,17 @@
                             "Name": "customized",
                             "Value": {
                                 "Pip": {
-                                    "za": 30481,
-                                    "zb": 30481,
+                                    "za": 33699,
+                                    "zb": 33699,
                                     "ze": 0,
-                                    "zg": 32767,
+                                    "zg": 33699,
                                     "zu": 466,
                                     "zv": 9321
                                 },
                                 "Raw": {
-                                    "DispensePosition": 327.0,
-                                    "EmergePosition": 327.0,
-                                    "FinalPosition": 351.52,
+                                    "DispensePosition": 361.52,
+                                    "EmergePosition": 361.52,
+                                    "FinalPosition": 361.52,
                                     "SurfaceFollow": 0.0,
                                     "SwapSpeed": 5.0,
                                     "TraverseSpeed": 100.0
